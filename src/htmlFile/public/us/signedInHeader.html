@@ -1,0 +1,17 @@
+{{define "header"}}
+     <head>
+         <title>Welcome back to NeverLand Bank!</title>
+            <form action="/signUp" method="get"> 
+                <label>Choose language:</label> 
+                    <select name="lang"> 
+                        <option value="us">English</option> 
+                        <option value="cn">汉语</option> 
+                    </select> 
+                    <input type="submit" value="Submit">
+            </form> 
+            <div align="right">
+                <a href="/homepage?lang=us">HomePage</a>
+                <a href="/signOut?lang=us">Sign out</a>
+            </div>
+     </head>
+{{end}}

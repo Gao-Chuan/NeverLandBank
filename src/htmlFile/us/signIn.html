@@ -1,0 +1,17 @@
+<html>
+    {{template "header" .}}
+    <body>
+        <h3>Sign in page</h3>
+        <form method="POST" action="/signIn?lang=us&sort=user" enctype="multipart/form-data">
+            Nick name:
+            <br>
+            <input type="text" name="nickname">
+            <br>
+            Password:
+            <br>
+            <input type="password" name="password">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+{{define "header"}}
+     <head>
+         <title>NeverLand Bank home page</title>
+            <form action="/homepage" method="get"> 
+                <label>Choose language:</label> 
+                    <select name="lang"> 
+                        <option value="us">English</option> 
+                        <option value="cn">汉语</option> 
+                    </select> 
+                    <input type="submit" value="Submit">
+                <div align="right">
+                    <a href="/?lang=us">Index</a>
+                    <a href="/profile?lang=us">profile</a>
+                    <a href="/transfer?lang=us">transfer</a>
+                </div>
+            </form> 
+     </head>
+{{end}}

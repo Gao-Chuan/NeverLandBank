@@ -1,0 +1,26 @@
+<html>
+    {{template "header" .}}
+    <body>
+        <h3>Hello, {{.username}}</h3>
+        <hr>
+        <h3>Your balance: {{.balance}}</h3>
+        <hr>
+        <h3>Recent 10 transfer records:</h3>
+        {{range .transfer}}
+            <table class="reference" border="1">
+                <tbody><tr>
+                    <th>Transfer ID</th>
+                    <th>from</th>		
+                    <th>to</th>
+                    <th>amount</th>
+                    <th>time</th>
+                </tr>
+                <tr>
+                {{range .}}
+                <th>{{.}}</th>
+                {{end}}
+                </tr>
+            </tbody></table>
+        {{end}}
+    </body>
+</html>
